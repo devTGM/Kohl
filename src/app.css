@@ -1,0 +1,236 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-inter: 'inter', sans-serif;
+	--font-dm-sans: 'DM Sans', sans-serif;
+	--font-libre: 'Libre Baskerville', sans-serif;
+	--font-poppins: 'Poppins', sans-serif;
+	--font-gill: 'Gill Sans', sans-serif;
+	--font-libre: 'Libre Baskerville', serif;
+	--font-joan: 'Joan', serif;
+
+	--color-main-brown: #55473e;
+	--color-brown-100: #e2c6b8;
+
+	--color-gray-100: #e6e6e6;
+
+	--color-brown-200: #908178;
+	--color-brown-300: #a27764;
+	--color-brown-400: #f9f4f2;
+	--color-brown-450: #f6f6f6;
+
+	--color-brown-500: #685950;
+	--color-brown-550: #594a42;
+	--color-brown-600: #baaa91;
+
+	--color-secondary-brown: #f7ecda;
+	--color-primary-3: #efefe3;
+	--color-secondary: #f2e8dc;
+	--color-beige: #f3efe9;
+	--color-green: #eff0e8;
+	--color-checklist: #f6f6f6;
+	--color-zinc-60: #f9f9f9;
+	--color-zinc-80: #55473e;
+	--color-stone-450: #baaa91;
+	--color-stone-750: #56463f;
+	--color-orange-60: #f2e8dc;
+	--color-tan-200: #c3af96;
+	--color-tan-100: #c8b69e;
+
+	--color-light-gray: #f0f0f0;
+	--color-light-gray-200: #1f1f1f;
+	--color-neutral-550: #7b7b7b;
+	--color-neutral-850: #333333;
+
+	--text-8: 0.5rem; /* 8px */
+	--text-10: 0.625rem; /* 10px */
+	--text-12: 0.75rem; /* 12px */
+	--text-13: 0.8125rem; /* 13px */
+	--text-14: 0.875rem; /* 14px */
+	--text-15: 0.9375rem; /* 15px */
+	--text-16: 1rem; /* 16px */
+	--text-17: 1.0625rem; /* 17px */
+	--text-18: 1.125rem; /* 18px */
+	--text-19: 1.1875rem; /* 19px */
+	--text-20: 1.25rem; /* 20px */
+	--text-21: 1.3125rem; /* 21px */
+	--text-22: 1.375rem; /* 22px */
+	--text-23: 1.4375rem; /* 23px */
+	--text-24: 1.5rem; /* 24px */
+	--text-25: 1.5625rem; /* 25px */
+	--text-26: 1.625rem; /* 26px */
+	--text-27: 1.6875rem; /* 27px */
+	--text-28: 1.75rem; /* 28px */
+	--text-29: 1.8125rem; /* 29px */
+	--text-30: 1.875rem; /* 30px */
+	--text-31: 1.9375rem; /* 31px */
+	--text-32: 2rem; /* 32px */
+	--text-33: 2.0625rem; /* 33px */
+	--text-34: 2.125rem; /* 34px */
+	--text-35: 2.1875rem; /* 35px */
+	--text-36: 2.25rem; /* 36px */
+	--text-37: 2.3125rem; /* 37px */
+	--text-38: 2.375rem; /* 38px */
+	--text-39: 2.4375rem; /* 39px */
+	--text-40: 2.5rem; /* 40px */
+	--text-41: 2.5625rem; /* 41px */
+	--text-42: 2.625rem; /* 42px */
+	--text-43: 2.6875rem; /* 43px */
+	--text-44: 2.75rem; /* 44px */
+	--text-45: 2.8125rem; /* 45px */
+	--text-46: 2.875rem; /* 46px */
+	--text-47: 2.9375rem; /* 47px */
+	--text-48: 3rem; /* 48px */
+	--text-49: 3.0625rem; /* 49px */
+	--text-50: 3.125rem; /* 50px */
+	--text-51: 3.1875rem; /* 51px */
+	--text-52: 3.25rem; /* 52px */
+	--text-53: 3.3125rem; /* 53px */
+	--text-54: 3.375rem; /* 54px */
+	--text-55: 3.4375rem; /* 55px */
+	--text-56: 3.5rem; /* 56px */
+	--text-57: 3.5625rem; /* 57px */
+	--text-58: 3.625rem; /* 58px */
+	--text-59: 3.6875rem; /* 59px */
+	--text-60: 3.75rem; /* 60px */
+	--text-61: 3.8125rem; /* 61px */
+	--text-62: 3.875rem; /* 62px */
+	--text-63: 3.9375rem; /* 63px */
+	--text-64: 4rem; /* 64px */
+	--text-65: 4.0625rem; /* 65px */
+	--text-66: 4.125rem; /* 66px */
+	--text-67: 4.1875rem; /* 67px */
+	--text-68: 4.25rem; /* 68px */
+	--text-69: 4.3125rem; /* 69px */
+	--text-70: 4.375rem; /* 70px */
+	--text-71: 4.4375rem; /* 71px */
+	--text-72: 4.5rem; /* 72px */
+	--text-73: 4.5625rem; /* 73px */
+	--text-74: 4.625rem; /* 74px */
+	--text-75: 4.6875rem; /* 75px */
+	--text-76: 4.75rem; /* 76px */
+	--text-77: 4.8125rem; /* 77px */
+	--text-78: 4.875rem; /* 78px */
+	--text-79: 4.9375rem; /* 79px */
+	--text-80: 5rem; /* 80px */
+	--text-81: 5.0625rem; /* 81px */
+	--text-82: 5.125rem; /* 82px */
+	--text-83: 5.1875rem; /* 83px */
+	--text-84: 5.25rem; /* 84px */
+	--text-85: 5.3125rem; /* 85px */
+	--text-86: 5.375rem; /* 86px */
+	--text-87: 5.4375rem; /* 87px */
+	--text-88: 5.5rem; /* 88px */
+	--text-89: 5.5625rem; /* 89px */
+	--text-90: 5.625rem; /* 90px */
+	--text-91: 5.6875rem; /* 91px */
+	--text-92: 5.75rem; /* 92px */
+	--text-93: 5.8125rem; /* 93px */
+	--text-94: 5.875rem; /* 94px */
+	--text-95: 5.9375rem; /* 95px */
+	--text-96: 6rem; /* 96px */
+	--text-105: 6.5rem; /* 105px */
+	--text-110: 6.875rem; /* 110px */
+	--text-122: 7.625rem; /* 122px */
+	--text-145: 9.063rem; /* 145px */
+	--text-158: 9.875rem; /* 158px */
+	--text-176: 11rem; /* 176px */
+	--text-182: 11.375rem; /* 182px */
+	--text-200: 12.5rem; /* 200px */
+	--text-220: 13.75rem; /* 220px */
+	--text-295: 18.438rem; /* 295px */
+
+	--radius-4: 0.25rem; /* 4px */
+	--radius-8: 0.5rem; /* 8px */
+	--radius-9: 0.5625rem; /* 9px */
+	--radius-10: 0.625rem; /* 10px */
+	--radius-12: 0.75rem; /* 12px */
+	--radius-15: 0.9375rem; /* 15px */
+	--radius-16: 1rem; /* 16px */
+	--radius-17: 0.625rem; /* 17px */
+	--radius-18: 1.125rem; /* 18px */
+	--radius-20: 1.25rem; /* 20px */
+	--radius-28: 1.75rem; /* 28px */
+	--radius-30: 1.875rem; /* 30px */
+	--radius-32: 2rem; /* 32px */
+	--radius-50: 3.125rem; /* 50px */
+	--radius-53: 3.313rem; /* 53px */
+	--radius-37: 2.313rem; /* 37px */
+	--radius-60: 3.75rem; /* 60px */
+}
+
+body {
+	font-family: 'Joan', serif;
+	font-weight: 400;
+	font-style: normal;
+	font-optical-sizing: auto;
+	font-synthesis: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+button {
+	cursor: pointer;
+}
+.leading-120 {
+	line-height: 120%;
+}
+
+.leading-130 {
+	line-height: 130%;
+}
+
+.leading-140 {
+	line-height: 140%;
+}
+
+.leading-150 {
+	line-height: 150%;
+}
+.leading-160 {
+	line-height: 160%;
+}
+.leading-170 {
+	line-height: 170%;
+}
+.leading-180 {
+	line-height: 180%;
+}
+
+.custom-container {
+	max-width: 90rem;
+	margin: 0 auto;
+}
+.leading-120 {
+	line-height: 120%;
+}
+
+.leading-150 {
+	line-height: 150%;
+}
+.leading-160 {
+	line-height: 160%;
+}
+
+.leading-140 {
+	line-height: 140%;
+}
+.leading-130 {
+	line-height: 130%;
+}
+
+.custom-container {
+	max-width: 90rem;
+	@apply mx-auto px-5 md:px-10 lg:px-14 xl:px-25;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
