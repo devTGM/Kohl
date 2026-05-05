@@ -1,0 +1,69 @@
+{
+	"/(web)": [
+		"src/routes/(web)/+page.ts"
+	],
+	"/": [],
+	"/(web)/about": [],
+	"/account/login": [
+		"src/routes/account/login/+server.ts"
+	],
+	"/api/blogs": [
+		"src/routes/api/blogs/+server.ts"
+	],
+	"/api/collections": [
+		"src/routes/api/collections/+server.ts"
+	],
+	"/api/collections/[handle]/products": [
+		"src/routes/api/collections/[handle]/products/+server.ts"
+	],
+	"/api/instagram": [
+		"src/routes/api/instagram/+server.ts"
+	],
+	"/api/products": [
+		"src/routes/api/products/+server.ts"
+	],
+	"/api/product": [
+		"src/routes/api/product/+server.ts"
+	],
+	"/api/reviews": [
+		"src/routes/api/reviews/+server.ts"
+	],
+	"/api/reviews/upload-image": [
+		"src/routes/api/reviews/upload-image/+server.ts"
+	],
+	"/api/shopify/cart": [
+		"src/routes/api/shopify/cart/+server.ts"
+	],
+	"/api/shopify/products": [
+		"src/routes/api/shopify/products/+server.ts"
+	],
+	"/api/shopify/products/[handle]": [
+		"src/routes/api/shopify/products/[handle]/+server.ts"
+	],
+	"/api/subscribe": [
+		"src/routes/api/subscribe/+server.ts"
+	],
+	"/(web)/blog": [
+		"src/routes/(web)/blog/+page.server.ts"
+	],
+	"/(web)/blog/[handle]": [
+		"src/routes/(web)/blog/[handle]/+page.server.ts"
+	],
+	"/(web)/contact": [
+		"src/routes/(web)/contact/+page.server.ts"
+	],
+	"/(landing)/landing": [],
+	"/(landing)/landing/home": [],
+	"/(web)/playground": [],
+	"/(web)/privacy": [],
+	"/(web)/refund": [],
+	"/(web)/science": [],
+	"/(web)/shipping": [],
+	"/(web)/shop": [
+		"src/routes/(web)/shop/+page.server.ts"
+	],
+	"/(web)/shop/[slug]": [
+		"src/routes/(web)/shop/[slug]/+page.server.ts"
+	],
+	"/(web)/terms": []
+}
