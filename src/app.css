@@ -9,33 +9,32 @@
 	--font-libre: 'Libre Baskerville', serif;
 	--font-joan: 'Joan', serif;
 
-	--color-main-brown: #55473e;
-	--color-brown-100: #e2c6b8;
+	--color-main-brown: #325875;
+	--color-brown-100: #d7e9f4;
 
 	--color-gray-100: #e6e6e6;
 
-	--color-brown-200: #908178;
-	--color-brown-300: #a27764;
-	--color-brown-400: #f9f4f2;
-	--color-brown-450: #f6f6f6;
+	--color-brown-200: #b1d4e6;
+	--color-brown-300: #72AFD1;
+	--color-brown-400: #f0f7fb;
+	--color-brown-500: #568cb1;
+	--color-brown-550: #456f8d;
+	--color-brown-600: #8ebcd3;
 
-	--color-brown-500: #685950;
-	--color-brown-550: #594a42;
-	--color-brown-600: #baaa91;
-
-	--color-secondary-brown: #f7ecda;
+	--color-secondary-brown: #f8fbfe;
 	--color-primary-3: #efefe3;
 	--color-secondary: #f2e8dc;
 	--color-beige: #f3efe9;
 	--color-green: #eff0e8;
 	--color-checklist: #f6f6f6;
 	--color-zinc-60: #f9f9f9;
-	--color-zinc-80: #55473e;
-	--color-stone-450: #baaa91;
-	--color-stone-750: #56463f;
-	--color-orange-60: #f2e8dc;
-	--color-tan-200: #c3af96;
-	--color-tan-100: #c8b69e;
+	--color-zinc-80: #325875;
+	--color-stone-450: #8ebcd3;
+	--color-stone-750: #3a5d76;
+	--color-orange-60: #f0f8ff;
+	--color-tan-200: #b1d4e6;
+	--color-tan-100: #c8e1f0;
+	--color-tan-100: #b3d4e6;
 
 	--color-light-gray: #f0f0f0;
 	--color-light-gray-200: #1f1f1f;

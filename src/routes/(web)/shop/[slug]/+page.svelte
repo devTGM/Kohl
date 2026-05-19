@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ProductDetails from '$lib/components/web/sections/ProductDetails.svelte';
+	import GlowChallenge from '$lib/components/web/sections/GlowChallenge.svelte';
 	import Subscribe from '$lib/components/web/sections/Subscribe.svelte';
 	import type { PageData } from './$types';
 
@@ -23,5 +24,7 @@
 	reviewSummary={data.reviewSummary}
 	reviewCount={data.reviewCount}
 />
+
+<GlowChallenge />
 
 <Subscribe />

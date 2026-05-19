@@ -52,7 +52,7 @@
 	};
 </script>
 
-<footer class="relative overflow-hidden bg-main-brown px-5 py-18 lg:pt-20 lg:pb-15">
+<footer class="relative overflow-hidden bg-[#85B6D6] px-5 py-18 lg:pt-20 lg:pb-15">
 	<div class="custom-container relative z-10 flex flex-col items-center text-center">
 		<SvgIcon icon="envelope" className="" />
 
@@ -84,7 +84,7 @@
 			<button
 				type="submit"
 				aria-label="Submit email"
-				class="flex-shrink-0 cursor-pointer rounded-full bg-main-brown p-3 text-white transition-colors hover:bg-[#4a423c]"
+				class="flex-shrink-0 cursor-pointer rounded-full bg-[#518cb4] p-3 text-white transition-colors hover:bg-[#518cb4]/90"
 				disabled={isSubmitting}
 			>
 				{#if isSubmitting}

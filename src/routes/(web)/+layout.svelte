@@ -57,7 +57,7 @@
 </svelte:head>
 
 <div class="relative z-10 lg:block">
-	<TopBar message="Free Shipping | 20% off on Hyperfade" />
+	<TopBar message="Trusted by 10,000+ Customers" />
 </div>
 
 <Navbar />

@@ -324,7 +324,7 @@
 								</div>
 								<div class="h-3 w-[30%] flex-1 overflow-hidden bg-gray-100">
 									<div
-										class="h-full bg-[#5c4b45]"
+										class="h-full bg-[#4a7ba1]"
 										style="width: {ratingSummary.total
 											? (dist.count / ratingSummary.total) * 100
 											: 0}%"

@@ -267,7 +267,7 @@
 	</section>
 {:else}
 	<div
-		class="flex min-h-screen justify-center bg-[#edf5fa] p-4 font-sans text-gray-800 lg:p-12 lg:p-20"
+		class="flex min-h-screen justify-center bg-[#f0f8ff] p-4 font-sans text-gray-800 lg:p-12 lg:p-20"
 	>
 		<div class="h-4" bind:this={stickySentinel}></div>
 		<div class="grid w-full max-w-7xl grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
@@ -298,7 +298,7 @@
 						{#each productImages as img, i}
 							<button
 								onclick={() => selectImage(i)}
-								class="h-20 w-20 flex-shrink-0 overflow-hidden rounded-md border-2 transition-all duration-200 {selectedImageIndex === i ? 'border-[#7BA6C0] opacity-100' : 'border-transparent opacity-60 hover:opacity-100'}"
+								class="h-20 w-20 flex-shrink-0 overflow-hidden rounded-md border-2 transition-all duration-200 {selectedImageIndex === i ? 'border-[#72AFD1] opacity-100' : 'border-transparent opacity-60 hover:opacity-100'}"
 								aria-label={`Select image ${i + 1}`}
 							>
 								<img
@@ -316,13 +316,13 @@
 			<div class="flex flex-col gap-6">
 				<!-- Top Badges -->
 				<div class="flex flex-wrap gap-2">
-					<span class="rounded-full border border-[#7BA6C0] bg-white px-3 py-1 text-12 font-medium text-[#7BA6C0]">Lightweight</span>
-					<span class="rounded-full border border-[#7BA6C0] bg-white px-3 py-1 text-12 font-medium text-[#7BA6C0]">Fuss-free</span>
-					<span class="rounded-full border border-[#7BA6C0] bg-white px-3 py-1 text-12 font-medium text-[#7BA6C0]">Non-greasy</span>
+					<span class="rounded-full border border-[#72AFD1] bg-white px-3 py-1 text-12 font-medium text-[#72AFD1]">Lightweight</span>
+					<span class="rounded-full border border-[#72AFD1] bg-white px-3 py-1 text-12 font-medium text-[#72AFD1]">Fuss-free</span>
+					<span class="rounded-full border border-[#72AFD1] bg-white px-3 py-1 text-12 font-medium text-[#72AFD1]">Non-greasy</span>
 				</div>
 
 				<div class="font-dm-sans">
-					<h1 class="text-32 leading-tight font-bold text-[#7BA6C0] lg:text-40">
+					<h1 class="text-32 leading-tight font-bold text-[#72AFD1] lg:text-40">
 						{product.title}
 					</h1>
 					
@@ -350,7 +350,7 @@
 							</span>
 						{/if}
 					</div>
-					<div class="mt-5 inline-flex w-full items-center justify-center lg:justify-start gap-3 rounded-full bg-[#7BA6C0] px-3 py-2 shadow-sm lg:w-fit lg:pr-6">
+					<div class="mt-5 inline-flex w-full items-center justify-center lg:justify-start gap-3 rounded-full bg-[#72AFD1] px-3 py-2 shadow-sm lg:w-fit lg:pr-6">
 						<div class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-black">
 							<svg class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4">
 								<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
@@ -367,7 +367,7 @@
 				<div class="grid grid-cols-4 gap-2 lg:gap-4">
 					{#each benefits as benefit}
 						<div class="flex h-full w-full flex-col items-center justify-center gap-2 rounded-xl bg-white p-3 text-center transition-transform hover:-translate-y-1 shadow-sm">
-							<div class="text-[#7BA6C0]">
+							<div class="text-[#72AFD1]">
 								<SvgIcon icon={benefit.icon} className="w-6 h-6 lg:w-8 lg:h-8" />
 							</div>
 							<span class="text-12 font-medium text-[#2d2d2d] lg:text-14">
@@ -386,7 +386,7 @@
 						<select
 							id={variantSelectId}
 							bind:value={selectedVariantId}
-							class="w-full rounded-full border border-gray-200 bg-white px-4 py-3 text-16 shadow-sm focus:ring-2 focus:ring-[#7BA6C0] focus:outline-none"
+							class="w-full rounded-full border border-gray-200 bg-white px-4 py-3 text-16 shadow-sm focus:ring-2 focus:ring-[#72AFD1] focus:outline-none"
 						>
 							{#each product.variants as variant}
 								<option value={variant.id}>
@@ -400,7 +400,7 @@
 				<!-- Actions -->
 				<div class="flex flex-col gap-3 mt-2 lg:flex-row">
 					<button
-						class="w-full rounded-full bg-[#7BA6C0] py-4 text-16 font-bold tracking-wide text-white uppercase shadow-md transition-colors hover:bg-[#7BA6C0]/90 disabled:cursor-not-allowed disabled:opacity-50"
+						class="w-full rounded-full bg-[#72AFD1] py-4 text-16 font-bold tracking-wide text-white uppercase shadow-md transition-colors hover:bg-[#72AFD1]/90 disabled:cursor-not-allowed disabled:opacity-50"
 						onclick={handleAddToCart}
 						disabled={isAddDisabled || !selectedVariant?.availableForSale}
 					>
@@ -432,7 +432,7 @@
 				</div>
 
 				{#if addMessage}
-					<p class="text-14 {addStatus === 'error' ? 'text-red-500' : 'text-[#7BA6C0] font-medium'}">
+					<p class="text-14 {addStatus === 'error' ? 'text-red-500' : 'text-[#72AFD1] font-medium'}">
 						{addMessage}
 					</p>
 				{/if}
@@ -441,19 +441,19 @@
 				<div class="mt-6 border-t border-gray-200 pt-6">
 					<div class="flex gap-4 border-b border-gray-200 pb-2 overflow-x-auto no-scrollbar">
 						<button 
-							class="text-16 font-semibold transition-colors whitespace-nowrap {activeTab === 'description' ? 'text-[#7BA6C0] border-b-2 border-[#7BA6C0] pb-2' : 'text-gray-500 hover:text-[#2d2d2d]'}" 
+							class="text-16 font-semibold transition-colors whitespace-nowrap {activeTab === 'description' ? 'text-[#72AFD1] border-b-2 border-[#72AFD1] pb-2' : 'text-gray-500 hover:text-[#2d2d2d]'}" 
 							onclick={() => activeTab = 'description'}
 						>
 							Description
 						</button>
 						<button 
-							class="text-16 font-semibold transition-colors whitespace-nowrap {activeTab === 'ingredients' ? 'text-[#7BA6C0] border-b-2 border-[#7BA6C0] pb-2' : 'text-gray-500 hover:text-[#2d2d2d]'}" 
+							class="text-16 font-semibold transition-colors whitespace-nowrap {activeTab === 'ingredients' ? 'text-[#72AFD1] border-b-2 border-[#72AFD1] pb-2' : 'text-gray-500 hover:text-[#2d2d2d]'}" 
 							onclick={() => activeTab = 'ingredients'}
 						>
 							Ingredients
 						</button>
 						<button 
-							class="text-16 font-semibold transition-colors whitespace-nowrap {activeTab === 'how-to' ? 'text-[#7BA6C0] border-b-2 border-[#7BA6C0] pb-2' : 'text-gray-500 hover:text-[#2d2d2d]'}" 
+							class="text-16 font-semibold transition-colors whitespace-nowrap {activeTab === 'how-to' ? 'text-[#72AFD1] border-b-2 border-[#72AFD1] pb-2' : 'text-gray-500 hover:text-[#2d2d2d]'}" 
 							onclick={() => activeTab = 'how-to'}
 						>
 							How to Apply

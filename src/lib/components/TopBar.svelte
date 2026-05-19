@@ -8,11 +8,11 @@
 </script>
 
 <div
-	class="top-0 z-100 flex overflow-hidden w-full items-center justify-between bg-main-brown px-5 py-2 font-inter text-sm text-gray-200 md:px-10"
+	class="relative top-0 z-100 flex w-full items-center justify-center bg-main-brown px-5 py-2 font-inter text-sm text-gray-200 md:px-10"
 	role="region"
 	aria-label="Announcement"
 >
-	<div class="flex items-center gap-1.5 p-1 w-[80%]">
+	<div class="flex items-center gap-1.5 p-1">
 		<!-- Dot animation -->
 		<span class="relative flex size-3 items-center justify-center">
 			<span
@@ -26,7 +26,7 @@
 			{message}
 		</span>
 
-		<!-- ✅ Mobile marquee (fixed width so it won’t push the icon) -->
+		<!-- ✅ Mobile marquee -->
 		<div class="block max-w-full overflow-hidden sm:hidden">
 			<span class="mobile-marquee font-inter text-white">
 				{message}
@@ -35,7 +35,7 @@
 	</div>
 
 	{#if instagram}
-		<div class="flex items-center gap-5 ">
+		<div class="absolute right-5 flex items-center gap-5 md:right-10">
 			<a
 				href={instagram.href}
 				target="_blank"

@@ -1,8 +1,9 @@
 <script lang="ts">
-	import ClinicalTrials from '$lib/components/web/sections/ClinicalTrials.svelte';
 	import HowItWorks from '$lib/components/web/sections/HowItWorks.svelte';
 	import HowToUseProduct from '$lib/components/web/sections/HowToUseProduct.svelte';
 	import ProductDetails from '$lib/components/web/sections/ProductDetails.svelte';
+	import GlowChallenge from '$lib/components/web/sections/GlowChallenge.svelte';
+	import WhyKohlSpice from '$lib/components/web/sections/WhyKohlSpice.svelte';
 	import Subscribe from '$lib/components/web/sections/Subscribe.svelte';
 	import Testimonial from '$lib/components/web/sections/Testimonial.svelte';
 	import type { PageData } from './$types';
@@ -48,8 +49,10 @@
 	reviewCount={data.reviewCount}
 />
 
+<GlowChallenge />
+
 {#if otherProducts.length}
-	<section class="bg-[#f8f6f2] py-16">
+	<section class="bg-[#f0f8ff] py-16">
 		<div class="custom-container space-y-8">
 			<div class="mx-auto max-w-3xl space-y-3 text-center">
 				<p class="font-dm-sans text-sm font-semibold uppercase tracking-[0.4em] text-brown-300">
@@ -63,11 +66,13 @@
 					favorites - then on each detail page.
 				</p>
 			</div>
+
+			
 			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 				{#each otherProducts as catalogProduct (catalogProduct.handle)}
 					<a
 						href={`/shop/${catalogProduct.handle}`}
-						class="group flex flex-col overflow-hidden rounded-20 border border-[#eee5dc] bg-white transition hover:-translate-y-1 hover:shadow-lg"
+						class="group flex flex-col overflow-hidden rounded-20 border border-[#d7e9f4] bg-white transition hover:-translate-y-1 hover:shadow-lg"
 					>
 						<div class="h-56 w-full overflow-hidden rounded-t-[26px] bg-gray-100">
 							{#if catalogProduct.images?.length}
@@ -102,8 +107,8 @@
 		</div>
 	</section>
 {/if}
-<ClinicalTrials variant="dark" />
 <HowToUseProduct />
 <HowItWorks />
+<WhyKohlSpice />
 <Testimonial product={data.product} reviews={data.reviews} reviewSummary={data.reviewSummary} />
 <Subscribe />
