@@ -89,7 +89,7 @@
 			</div>
 
 			<!-- Right side: Image -->
-			<div class="relative w-full aspect-[4/3] lg:aspect-square overflow-hidden rounded-20 bg-white shadow-2xl">
+			<div class="relative w-full aspect-square overflow-hidden rounded-20 bg-white shadow-2xl">
 				<img
 					src={`/images/glow-challenge-day-${activeDay}.jpg`}
 					alt={`Glow Challenge ${currentStage.label}`}
